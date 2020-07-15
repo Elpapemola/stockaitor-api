@@ -3,10 +3,8 @@ const config = require("../config/db.config.js");
 const Sequelize = require("sequelize");
 
 
-console.log("pasando dialecto: "+config.dialect);
-console.log("pasando db: "+config.DB);
-console.log("pasando user: "+config.USER);
-console.log("pasando pass: "+config.PASSWORD);
+
+console.log("pasando host: "+config.HOST);
 
 const sequelize = new Sequelize(
   config.DB,
