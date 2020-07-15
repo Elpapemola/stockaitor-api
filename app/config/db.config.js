@@ -1,8 +1,8 @@
 module.exports = {
-  HOST: 'localhost',
-  USER: 'script4',
-  PORT:'3306',
-  PASSWORD: '?Bfyp693',
+  HOST: process.env.HOST,
+  USER: process.env.USER,
+  PORT: process.env.PORT,
+  PASSWORD: process.env.PASS,
   DB: 'admin_local',
   dialect: "mysql",
   pool: {

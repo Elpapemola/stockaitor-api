@@ -5,6 +5,10 @@ const Sequelize = require("sequelize");
 
 
 console.log("pasando host: "+config.HOST);
+console.log("pasando user: "+config.USER);
+console.log("pasando pass: "+config.PASSWORD);
+console.log("pasando puerto: "+config.PORT);
+
 
 const sequelize = new Sequelize(
   config.DB,
