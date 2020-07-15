@@ -1,7 +1,7 @@
 module.exports = {
   HOST: process.env.HOST,
   USER: process.env.USER,
-  PORT: process.env.PORT,
+  PORT: process.env.BDPORT,
   PASSWORD: process.env.PASS,
   DB: 'admin_local',
   dialect: "mysql",
