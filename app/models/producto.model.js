@@ -23,9 +23,6 @@ module.exports = (sequelize, Sequelize) => {
       Editorial: {
         type: Sequelize.STRING
       },
-      Marca: {
-        type: Sequelize.STRING
-      },
       Precio: {
         type: Sequelize.DOUBLE
       },
@@ -34,19 +31,8 @@ module.exports = (sequelize, Sequelize) => {
       },
       Familia: {
         type: Sequelize.STRING
-      },
-      Fabricante: {
-        type: Sequelize.STRING
-      },
-      Estado: {
-        type: Sequelize.STRING
-      },
-      Nserie: {
-        type: Sequelize.STRING
-      },
-      Tematica: {
-        type: Sequelize.STRING
       }
+      
 
     });
   
