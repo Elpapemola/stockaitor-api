@@ -3,12 +3,48 @@ const config = require("../config/auth.config");
 const User = db.user;
 const Role = db.role;
 const Producto = db.productos;
+const Reserva = db.reserva;
 
 const Op = db.Sequelize.Op;
 
 var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
 
+exports.reserva = (req, res) => {
+   // Validate request
+   if (!req.body.nreserva) {
+    res.status(400).send({
+      message: "Content can not be empty!"
+    });
+    return;
+  }
+
+  // Create a Tutorial
+  const resreva = {
+    
+      Nombre:req.body.Nombre,
+      Telefono:req.body.Telefono,
+      Curso:req.body.Curso,
+      Observaciones:req.body.Observaciones,
+  
+  };
+
+  
+  Reserva.create(reserva)
+        .then(data => {
+        //  res.send(data);
+        })
+        .catch(err => {
+          res.status(500).send({
+            message:
+              err.message || "Some error occurred while creating the reserva."
+          });
+        });
+
+
+  // Save Tutorial in the database
+
+}
 
 exports.findwebid = (req, res) => {
    

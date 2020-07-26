@@ -37,7 +37,7 @@ db.role = require("../models/role.model.js")(sequelize, Sequelize);
 db.productos = require("../models/producto.model.js")(sequelize, Sequelize);
 db.ubicaciones = require("../models/ubicacion.model.js")(sequelize, Sequelize);
 db.ubi_stock = require("../models/ubi_stock.model")(sequelize, Sequelize);
-
+db.reserva = require("../models/reserva.model")(sequelize, Sequelize);
 
 
 
