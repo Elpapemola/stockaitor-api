@@ -12,14 +12,14 @@ var bcrypt = require("bcryptjs");
 
 exports.reserva = (req, res) => {
    // Validate request
-   console.log("body:"+JSON.stringify(req.body))
+   /*console.log("body:"+JSON.stringify(req.body))
    if (!req.body.Nombre) {
     res.status(400).send({
       message: "Content can not be empty!"
     });
     return;
   }
-
+*/
   // Create a Tutorial
   const resreva = {
     
