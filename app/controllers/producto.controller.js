@@ -33,7 +33,7 @@ exports.reserva = (req, res) => {
   
   Reserva.create(reserva)
         .then(data => {
-        //  res.send(data);
+          res.send(data);
         })
         .catch(err => {
           res.status(500).send({
