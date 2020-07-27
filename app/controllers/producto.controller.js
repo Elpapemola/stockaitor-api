@@ -21,7 +21,7 @@ exports.reserva = (req, res) => {
   }
 */
   // Create a Tutorial
-  const resreva = {
+  const reserva = {
     
       Nombre:req.body.Nombre,
       Telefono:req.body.Telefono,
