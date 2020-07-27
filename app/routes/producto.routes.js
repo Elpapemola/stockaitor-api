@@ -15,6 +15,6 @@ module.exports = function(app) {
   app.get("/api/data/productosid/:productoId",[authJwt.verifyToken], controller.findwebid);
   app.get("/api/data/productosnom/:productoId",[authJwt.verifyToken], controller.findnombre);
   app.get("/api/data/productosbarra/:productoId",[authJwt.verifyToken], controller.findbarra);
-  app.post("/api/rosario/",[authJwt.verifyToken], controller.reserva);
+  app.post("/api/rosario/", controller.reserva);
  
 };
