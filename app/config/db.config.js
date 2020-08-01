@@ -1,9 +1,9 @@
 module.exports = {
-  HOST: process.env.HOST,
-  USER: process.env.USER,
-  PORT: process.env.BDPORT,
-  PASSWORD: process.env.PASS,
-  DB: 'admin_local',
+  HOST: '192.168.0.30',
+  USER: 'scrip4',
+  PORT: '3306',
+  PASSWORD: 'Nemesis8082*',
+  DB: 'stockaitor',
   dialect: "mysql",
   pool: {
     max: 5,
