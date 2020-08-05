@@ -9,7 +9,7 @@ module.exports = function(app) {
     );
     next();
   }); 
-
+ 
 
   //un producto por codigo
   app.get("/api/data/productosid/:productoId",[authJwt.verifyToken], controller.findwebid);

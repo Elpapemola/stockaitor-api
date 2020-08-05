@@ -133,7 +133,7 @@ exports.crear= (req, res) => {
     
         Ubi_stock.create(ubi_stock)
           .then(data => {
-          //  res.send(data);
+            res.send(data);
           })
           .catch(err => {
             res.status(500).send({
