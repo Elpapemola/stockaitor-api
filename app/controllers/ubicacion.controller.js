@@ -16,6 +16,7 @@ exports.todas = (req, res) => {
    
     Ubicacion.findAll({ where: {    
       user: req.params.user }
+
   }) .then(data => {
       res.send(data);
     })
@@ -39,10 +40,11 @@ exports.buscar = (req, res) => {
 };
 
 exports.buscarp = (req, res) => {
-   
+   console.log("sacando padres "+req.params)
   Ubicacion.findAll({
     where: {    
-        Padre: null}
+        Padre: null,
+        user: req.params.user}
     })
   .then(data => {
     res.send(data);
