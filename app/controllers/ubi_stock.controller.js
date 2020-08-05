@@ -130,9 +130,10 @@ exports.crear= (req, res) => {
     
     };
 
-    
+    console.log("crando ubicacion");
         Ubi_stock.create(ubi_stock)
           .then(data => {
+            console.log("creada!: "+JSON.stringify(data));
             res.send(data);
           })
           .catch(err => {
