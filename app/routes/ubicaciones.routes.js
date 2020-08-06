@@ -14,7 +14,9 @@ module.exports = function(app) {
 
 
     app.get("/api/data/ubicacion/:user",[authJwt.verifyToken], controller.todas);
-   
+
+    app.get("/api/data/ubicaciond/",[authJwt.verifyToken], controller.todasd);
+
     app.get("/api/data/ubicacionn/:id",[authJwt.verifyToken], controller.buscar);
 
     app.get("/api/data/padres/:user",[authJwt.verifyToken], controller.buscarp);

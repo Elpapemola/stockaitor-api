@@ -24,7 +24,17 @@ exports.todas = (req, res) => {
       console.log(err)
     })
 };
+exports.todasd = (req, res) => {
+   
+  Ubicacion.findAll(
 
+) .then(data => {
+    res.send(data);
+  })
+  .catch(err => {
+    console.log(err)
+  })
+};
 exports.buscar = (req, res) => {
    
     Ubicacion.findOne({
