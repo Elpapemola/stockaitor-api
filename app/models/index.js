@@ -17,7 +17,7 @@ const sequelize = new Sequelize(
   {
     host: config.HOST,
     dialect: config.dialect,
-
+    logging: false,
     pool: {
       max: config.pool.max,
       min: config.pool.min,
@@ -39,6 +39,10 @@ db.ubicaciones = require("../models/ubicacion.model.js")(sequelize, Sequelize);
 db.ubi_stock = require("../models/ubi_stock.model")(sequelize, Sequelize);
 db.reserva = require("../models/reserva.model")(sequelize, Sequelize);
 
+db.mensajes = require("../models/mensaje.model.js")(sequelize, Sequelize);
+db.devoluciones = require("../models/devolucion.model.js")(sequelize, Sequelize);
+db.discrepancias= require("../models/discrepancia.model")(sequelize, Sequelize);
+db.movimientos = require("../models/movimiento.model")(sequelize, Sequelize);
 
 
 db.role.belongsToMany(db.user, {
